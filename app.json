@@ -1,4 +1,4 @@
-{
+ {
   "expo": {
     "name": "cravy-new",
     "slug": "cravy-new",
@@ -13,7 +13,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
       }
     },
@@ -28,9 +28,22 @@
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "resizeMode": "cover",
+          "backgroundColor": "#ffffff",
+          "enableFullScreenImage_legacy": true
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Rubik-Bold.tff",
+            "./assets/fonts/Rubik-ExtraBold.tff",
+            "./assets/fonts/Rubik-Medium.tff",
+            "./assets/fonts/Rubik-Light.tff",
+            "./assets/fonts/Rubik-Regular.tff",
+            "./assets/fonts/Rubik-SemiBold.tff"
+            ]
         }
       ]
     ],
