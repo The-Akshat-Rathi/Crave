@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --baby-blue: #89CFF0;
+  --powder-blue: #B0E0E6;
+  --sky-blue: #87CEEB;
+  --steel-blue: #4682B4;
+  --royal-blue: #4169E1;
+  --navy-blue: #000080;
+  --midnight-blue: #191970;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-medium;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-gradient-to-r from-sky-500 to-indigo-700 bg-clip-text text-transparent;
+  }
+  
+  .elegant-shadow {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .card-hover:hover {
+    @apply transform -translate-y-1 shadow-lg;
+  }
+  
+  .restaurant-card {
+    @apply bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 card-hover;
+  }
+  
+  .button-primary {
+    @apply bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-md px-4 py-2 hover:shadow-md transition-all;
+  }
+  
+  .button-secondary {
+    @apply bg-white text-blue-700 border border-blue-700 rounded-md px-4 py-2 hover:bg-blue-50 transition-all;
+  }
+}
